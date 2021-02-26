@@ -4,5 +4,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ServiceContext {
-    public static ServiceStatus serviceStatus = ServiceStatus.NORMAL;
+    public volatile static ServiceStatus serviceStatus = ServiceStatus.NORMAL;
 }
